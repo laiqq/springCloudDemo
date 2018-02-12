@@ -5,10 +5,10 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/laiqq/springCloudDemo/tree/master/config-repo-center/
+          uri: https://github.com/laiqq/configRepoCenter/
           search-paths: config-repo
-          username: xx
-          password: xx
+          username: 375113044@qq.com
+          password: xxxxx
 
 server:
   port: 1201
