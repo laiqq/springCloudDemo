@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/shoplai/config-repo-center/
+          search-paths: repo
+          username: 375113044@qq.com
+          password: number618601
+
+server:
+  port: 1201
