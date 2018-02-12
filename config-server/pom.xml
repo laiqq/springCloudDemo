@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.jony</groupId>
-	<artifactId>config-server-git</artifactId>
+	<artifactId>config-server</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>config-server-git</name>
+	<name>config-server</name>
 	<description>Spring Cloud In Action</description>
 
 	<parent>
