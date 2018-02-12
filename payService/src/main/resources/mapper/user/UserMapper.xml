@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jony.mapper.UserMapper">
+    <resultMap id="BaseUserMap" type="com.jony.entity.User">
+        <result column="user_name"  property="userName"/>
+        <result column="age"  property="age"/>
+        <result column="sex"  property="sex"/>
+    </resultMap>
+
+    <sql id="Base_User_Column_List">
+        user_name,
+        age,
+        sex
+    </sql>
+
+    <select id="getAllUser" resultMap="BaseUserMap" flushCache="true">
+        select
+        <include refid="Base_User_Column_List" />
+        from t_user
+    </select>
+
+    <select id="findAllUser" resultMap="BaseUserMap" flushCache="true">
+        select
+        user_name
+        from t_user
+    </select>
+    
+    <select id="findAllUserByUserName" resultMap="BaseUserMap" flushCache="true">
+        select
+        user_name
+        from t_user
+        where user_name = #{userName}
+    </select>
+    
+     <insert id="createUser">
+        insert into t_user(user_name,
+        age,
+        sex)
+        value(#{userName},#{age},#{sex})
+    </insert>
+     <update id="updateUser">
+        update  t_user
+        set user_name = #{userName}, age = #{age},sex =#{sex}
+        where user_name = #{userName}
+    </update>
+     <delete id="deleteUser">
+       delete from t_user where user_name = #{userName}
+    </delete>
+</mapper>
