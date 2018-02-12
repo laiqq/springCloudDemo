@@ -1,9 +1,26 @@
-×¢ÒâÊÂÏî£º
-·şÎñÌá¹©Õß springCloud °æ±¾ Camden.SR4  £¬springboot°æ±¾ 1.4.3
+æ³¨æ„äº‹é¡¹ï¼š
+æœåŠ¡æä¾›è€… springCloud ç‰ˆæœ¬ Camden.SR4  ï¼Œspringbootç‰ˆæœ¬ 1.4.3
 
-×¢²áÖĞĞÄ springCloud °æ±¾ Dalston.SR4  £¬springboot°æ±¾ 1.5.6
+æ³¨å†Œä¸­å¿ƒ springCloud ç‰ˆæœ¬ Dalston.SR4  ï¼Œspringbootç‰ˆæœ¬ 1.5.6
 
-ÅäÖÃÖĞĞÄ springCloud °æ±¾ Dalston.SR4  £¬springboot°æ±¾ 1.5.6
+é…ç½®ä¸­å¿ƒ springCloud ç‰ˆæœ¬ Dalston.SR4  ï¼Œspringbootç‰ˆæœ¬ 1.5.6
 
-·şÎñÌá¹©Õß°æ±¾²»¶Ô£¬·şÎñÎŞ·¨Æô¶¯
+æœåŠ¡æä¾›è€…ç‰ˆæœ¬ä¸å¯¹ï¼ŒæœåŠ¡æ— æ³•å¯åŠ¨
 
+æœ¬åœ°åˆ›å»ºæ•°æ®åº“testã€test1,ä¿®æ”¹æ•°æ®åº“é…ç½®,æ–°å»ºè¡¨
+
+CREATE TABLE `t_user` (
+  `user_name` varchar(64) DEFAULT NULL,
+  `age` int(11) DEFAULT NULL,
+  `sex` int(11) DEFAULT NULL,
+  `uid` varchar(32) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8
+
+å¯åŠ¨æœåŠ¡ï¼Œç”¨postManè®¿é—® http://localhost:8080/test/selectUser ,postè¯·æ±‚,application/jsonæ ¼å¼
+æŠ¥æ–‡
+{
+"uid" : "11111",
+"userName" : "pony1",
+"sex" : 27,
+"age" : 0
+}
