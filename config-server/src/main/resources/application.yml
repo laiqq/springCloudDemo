@@ -8,7 +8,7 @@ spring:
           uri: https://github.com/laiqq/configRepoCenter/
           search-paths: config-repo
           username: 375113044@qq.com
-          password: xxxxx
+          password: number618601
 
 server:
-  port: 1201
+  port: 8100
