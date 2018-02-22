@@ -1,17 +1,10 @@
-
-
-
-
-
 spring:
   application:
     name: config-client
   cloud:
     config:
-      uri: http://localhost:1201/
-      profile: default
+      uri: http://localhost:8100/
+      profile: dev
       label: master
-
 server:
-  port: 2001
-
+  port: 8080
